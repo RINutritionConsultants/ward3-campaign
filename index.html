@@ -174,7 +174,7 @@ let n = 0;
 SECTIONS.forEach(sec => {
   const secDiv = document.createElement("div");
   secDiv.className = "section";
-  secDiv.innerHTML = `<div class="section-title">${sec.title}</div><div class="section-sub">${sec.sub}</div>`;
+  secDiv.innerHTML = secDiv.innerHTML = `<div class="section-title">${sec.title}</div>`;
   sec.questions.forEach(item => {
     n++;
     const idx = n;
